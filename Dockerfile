@@ -1,4 +1,4 @@
-FROM sonarsource/sonar-scanner-cli:4.6
+FROM sonarsource/sonar-scanner-cli
 
 LABEL version="0.0.1" \
       repository="https://github.com/sonarsource/sonarcloud-github-action" \

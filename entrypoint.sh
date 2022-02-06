@@ -21,4 +21,13 @@ if [[ -z "${SONARCLOUD_URL}" ]]; then
   SONARCLOUD_URL="https://sonarcloud.io"
 fi
 unset JAVA_HOME
+
+echo "------------"
+pwd
+ls
+ls -la
+ls -l coverage/packages/ngx-deploy-npm/lcov.info
+cat coverage/packages/ngx-deploy-npm/lcov.info
+echo "------------"
+
 sonar-scanner -Dsonar.projectBaseDir=${INPUT_PROJECTBASEDIR} -Dsonar.host.url=${SONARCLOUD_URL} ${INPUT_ARGS}
